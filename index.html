@@ -1,31 +1,27 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8"> 
+    <meta charset="UTF-8" />
     <title>To-Diamond-dos</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="jquery.js"></script>
     <script src="script.js"></script>
     <body>
-    <h1>JQuery for Cool Kids...</h1>
+      <h1>JQuery for Cool Kids...</h1>
 
-    <form>
+      <form>
+        <input type="text" placeholder="To-do text" id="to-do-input" />
 
-        <input
-        type="text"
-        placeholder="To-do text"   
-        id="to-do-input"     
-        >
-
-        <input
-        type="text"
-        placeholder="author"
-        id="author-input"
-        >
+        <input type="text" placeholder="author" id="author-input" />
 
         <button id="submit-btn">Submit 🦄</button>
-    
-    </form>
+      </form>
+
+      <h2>Our things to do:</h2>
+      <p>You have <span id="to-do-count">0</span> things to do! DO 'EM.</p>
+      <ul id="to-do-list">
+        <!-- This is where to-dos will render-->
+      </ul>
     </body>
   </head>
 </html>
