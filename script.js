@@ -33,9 +33,8 @@ function handleSubmit(event) {
     // append values to the DOM
     // <li>Yard work</li>
     $('#to-do-list').append(`
-    
-      <li>
-      <button class='delete-button'>Delete!</button>
+     
+      <li><button class='delete-button'>Delete!</button>
       ${authorInput} needs to do ${toDoInput}
       
       </li>
@@ -54,4 +53,6 @@ $('#to-do-count').text(toDoCount);
 function handleDelete(){
 //remove the <li> tag from the DOM 
     console.log('delete!');
+    $(this).parent().remove();
+
 }//end of handle delete
